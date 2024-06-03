@@ -1,0 +1,161 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcdddd;
+    color: #333;
+}
+
+.header {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.home-img{
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(31 14 14 / 76%);
+}
+
+.name {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+    margin-top: 20px;
+}
+
+.nav a {
+    padding: 7px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background-color: #007bff;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
+.container , .section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+p, ul {
+    line-height: 1.6;
+}
+
+.footer {
+    background: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+    margin-top: 40px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+li {
+    padding: 5px;
+}
+
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
